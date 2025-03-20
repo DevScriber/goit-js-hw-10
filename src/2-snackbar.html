@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript-hw-10-Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a class="back-link" href="./index.html">Go Back</a>
+    </header>
+
+    <main>
+      <form class="form">
+        <label class="delay-label">
+          Delay (ms)
+          <input class="delay-input" type="number" name="delay" required />
+        </label>
+
+        <fieldset class="radio-list">
+          <legend>State</legend>
+          <label class="radio-label">
+            <input
+              class="radio-item"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-item"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="form-button" type="submit">Create notification</button>
+      </form>
+    </main>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
